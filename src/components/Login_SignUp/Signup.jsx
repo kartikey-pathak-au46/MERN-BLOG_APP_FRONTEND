@@ -12,8 +12,8 @@ function Signup() {
   const [doing, setDoing] = useState(false);
   const navigate = useNavigate();
 
-  const url = "http://localhost:8080/user/signup";
-  //let url = `https://mernblog-t8ft.onrender.com/user/signup`
+  //const url = "http://localhost:8080/user/signup";
+  let url = `https://mern-blog-site-backend.onrender.com/user/signup`;
   const handleSubmit = () => {
     setDoing(true);
     axios

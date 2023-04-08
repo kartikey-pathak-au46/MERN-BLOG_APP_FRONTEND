@@ -49,8 +49,8 @@ function EditProfile() {
         avatar: avatar,
       };
       // userRouter.patch("/edit/:id", editProfile)
-      let url = `http://localhost:8080/user/edit/${user._id}`;
-      //let url = `https://mernblog-t8ft.onrender.com/user/edit/${user._id}`
+      //let url = `http://localhost:8080/user/edit/${user._id}`;
+      let url = `https://mern-blog-site-backend.onrender.com/user/edit/${user._id}`;
       const authAxios = TokenApi(url);
 
       authAxios

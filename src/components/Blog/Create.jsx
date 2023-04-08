@@ -37,8 +37,8 @@ function Create() {
         user: user._id,
       };
 
-      const url = "http://localhost:8080/blog/add";
-      //const url = "https://mernblog-t8ft.onrender.com/blog/add"
+      //const url = "http://localhost:8080/blog/add";
+      const url = "https://mern-blog-site-backend.onrender.com/blog/add";
       let authAxios = TokenApi(url);
       authAxios
         .post(url, payload)

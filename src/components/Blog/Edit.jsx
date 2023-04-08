@@ -15,8 +15,8 @@ function Edit() {
   const cookies = new Cookie();
   let user = cookies.get("loggedUser");
   const fetchBlogData = () => {
-    let url = `http://localhost:8080/blog/${blogID.id}`;
-    //let url = `https://mernblog-t8ft.onrender.com/blog/${blogID.id}`
+    //let url = `http://localhost:8080/blog/${blogID.id}`;
+    let url = `https://mern-blog-site-backend.onrender.com/blog/${blogID.id}`;
     const authAxios = TokenApi(url);
 
     authAxios
@@ -40,8 +40,8 @@ function Edit() {
         description: description,
       };
 
-      const url = `http://localhost:8080/blog/update/${blogID.id}`;
-      //let url = `https://mernblog-t8ft.onrender.com/blog/update/${blogID.id}`;
+      //const url = `http://localhost:8080/blog/update/${blogID.id}`;
+      let url = `https://mern-blog-site-backend.onrender.com/blog/update/${blogID.id}`;
       let authAxios = TokenApi(url);
       authAxios
         .patch(url, payload)

@@ -23,8 +23,8 @@ function Dashboard() {
   const navigate = useNavigate();
 
   const fetchData = () => {
-    const url = `http://localhost:8080/blog/user/${user._id}`;
-    //let url = `https://mernblog-t8ft.onrender.com/blog/user/${user._id}`;
+    //const url = `http://localhost:8080/blog/user/${user._id}`;
+    let url = `https://mern-blog-site-backend.onrender.com/blog/user/${user._id}`;
     let authAxios = TokenApi(url);
     authAxios
       .get(url)
@@ -39,8 +39,8 @@ function Dashboard() {
   }, []);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:8080/blog/${id}`;
-    //let url = `https://mernblog-t8ft.onrender.com/blog/${id}`;
+    //const url = `http://localhost:8080/blog/${id}`;
+    let url = `https://mern-blog-site-backend.onrender.com/blog/${id}`;
     console.log(id);
     swal({
       title: "Are you sure?",

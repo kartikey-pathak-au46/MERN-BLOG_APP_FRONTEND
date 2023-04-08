@@ -12,8 +12,8 @@ function Getblog() {
   const blogID = useParams();
 
   const getData = () => {
-    const url = `http://localhost:8080/blog/${blogID.id}`;
-    //let url = `https://mernblog-t8ft.onrender.com/blog/${blogID.id}`
+    //const url = `http://localhost:8080/blog/${blogID.id}`;
+    let url = `https://mern-blog-site-backend.onrender.com/blog/${blogID.id}`;
     const authAxios = TokenApi(url);
     authAxios
       .get(url)
