@@ -1,0 +1,27 @@
+.profile{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: linear-gradient(to left, #4158D0 , #C850C0, #FFCC70  ) ;
+    
+}
+
+.avatar{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 20px;
+    border-radius: 100px;
+}
+.editeButton{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
